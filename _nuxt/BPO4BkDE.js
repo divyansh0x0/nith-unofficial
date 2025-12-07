@@ -1,0 +1,1 @@
+import{_ as o,c as t,o as a,d as r,a as s}from"#entry";const c={};function n(d,e){return a(),t("div",null,[...e[0]||(e[0]=[r(" About us ",-1),s("a",{href:"/"},"Go to home",-1)])])}const u=o(c,[["render",n]]);export{u as default};
