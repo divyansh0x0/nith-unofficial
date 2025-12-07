@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     "~/assets/styles/main.css",
   ],
   app: {
+    baseURL: '/nith-unofficial/',     // must match the repo name
     head: {
       link: [
         {
