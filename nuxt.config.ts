@@ -1,8 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
+  ssr: false,
   nitro:{
-    preset:"github_pages",
+    preset: 'static',    // <-- Best for GH Pages
+    serveStatic: true,
   },
   devtools: { enabled: true },
   css:[
@@ -11,6 +13,8 @@ export default defineNuxtConfig({
     "~/assets/styles/main.css",
   ],
   app: {
+    baseURL: '/nith-unofficial/',     // repo name
+    buildAssetsDir: '_nuxt/',
     head: {
       link: [
         {
@@ -29,7 +33,6 @@ export default defineNuxtConfig({
       ]
     }
   },
-
   modules: [
     '@nuxt/content',
     '@nuxt/eslint',
