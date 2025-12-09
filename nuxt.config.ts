@@ -14,7 +14,6 @@ export default defineNuxtConfig({
   ],
   app: {
     baseURL: '/nith-unofficial/',     // repo name
-    buildAssetsDir: '_nuxt/',
     head: {
       link: [
         {
@@ -38,8 +37,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/image',
     '@nuxt/scripts',
-    '@nuxt/icon'
-  ],
-
+    '@nuxt/icon',
+  ]
 
 })

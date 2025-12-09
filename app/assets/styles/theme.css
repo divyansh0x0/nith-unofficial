@@ -51,6 +51,7 @@
     --color-surface-container-highest: rgb(226 226 233);
 
     /* Text Colors */
+    --color-on-primary: rgb(255 255 255);
     --color-on-primary-container: rgb(40 71 119);
     --color-on-secondary: rgb(255 255 255);
     --color-on-secondary-container: rgb(62 71 89);
@@ -59,9 +60,9 @@
     --color-on-error: rgb(255 255 255);
     --color-on-error-container: rgb(147 0 10);
     --color-on-surface-variant: rgb(68 71 78);
-
-
     --color-on-surface: rgb(25 28 32);
+
+
     /* Border & Shadow */
     --color-border: #E0E0E0;
     --color-shadow: rgba(0, 0, 0, 0.1);
@@ -71,8 +72,11 @@
     --color-focus: #2962FF;
 
     /** Translucent overlay colors */
-    --color-navbar-highlight: rgba(0, 0, 0, 0.07);
-    --color-navbar-container: rgba(0, 0, 0, 0.11);
+    --color-navbar-highlight: rgba(183, 183, 243, 0.94);
+    --color-navbar-container: rgba(25, 25, 25, 0.09);
+    --color-navbar-surface: rgb(216, 216, 216);
+    --color-sidebar-backdrop: rgba(216, 216, 216, 0.76);
+    --color-sidebar-container: rgba(255, 255, 255, 0.52);
 }
 
 [theme="dark"] {
@@ -118,7 +122,10 @@
     --color-hover: #448AFF;
     --color-focus: #82B1FF;
     /** Translucent overlay colors */
-    --color-navbar-highlight: rgba(255, 255, 255, 0.06);
-    --color-navbar-container: rgba(34, 34, 34, 0.69);
+    --color-navbar-highlight: rgba(94, 145, 225, 0.05);
+    --color-navbar-container: rgba(255, 255, 255, 0.04);
+    --color-navbar-surface: rgba(0, 0, 0, 0.32);
+    --color-sidebar-backdrop: rgba(15, 15, 16, 0.89);
+    --color-sidebar-container: rgba(237, 237, 237, 0.04);
 }
 /* Dark Theme */

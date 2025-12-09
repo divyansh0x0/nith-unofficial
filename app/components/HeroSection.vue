@@ -19,9 +19,11 @@
     text-align: center;
     align-content: center;
     overflow: hidden;
-
+    h3{
+        font-size: min(4vw, max(0.9rem, 4vh));
+    }
     h1 {
-        padding: var(--padding-sm);
+        padding: 0 var(--padding-sm);
         font-size: min(6vw, max(1rem, 7vh));
     }
 

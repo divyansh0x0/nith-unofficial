@@ -25,7 +25,7 @@ button{
     border: none;
     color: inherit;
     cursor: pointer;
-    padding: var(--padding-md) var(--padding-md) var(--padding-md) 0;
+    padding: var(--padding-md);
 }
 svg {
     display: block;

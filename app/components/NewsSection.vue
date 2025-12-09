@@ -192,7 +192,7 @@ onMounted(async () => {
     .item {
         position: relative;
         transition: 200ms transform linear;
-
+        display: block;
 
         &:nth-child(even) {
             background-color: var(--color-primary-container-variant);
@@ -201,10 +201,11 @@ onMounted(async () => {
             background-color: var(--color-primary-container);
         }
         a {
+            position: relative;
             width: 100%;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            //align-items: center;
             gap: var(--spacing-sm);
             padding: var(--padding-md);
             text-decoration: none;
@@ -218,6 +219,7 @@ onMounted(async () => {
                 width: min-content;
                 display: flex;
                 flex-direction: column;
+                align-content: space-between;
                 justify-content: space-between;
                 align-items: end;
                 gap: var(--spacing-sm);

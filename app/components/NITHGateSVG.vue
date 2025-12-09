@@ -68,6 +68,7 @@ svg {
 .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
     fill: none;
     stroke: var(--color-on-secondary-container);
+    opacity: 0.5;
     //stroke-miterlimit: 10;
 }
 

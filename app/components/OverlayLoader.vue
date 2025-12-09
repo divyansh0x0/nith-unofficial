@@ -17,9 +17,6 @@ defineProps({
             </div>
             <slot v-else key="loaded-content"/>
         </Transition>
-
-
-
     </div>
 </template>
 
@@ -50,12 +47,5 @@ defineProps({
     height: 100px;
 }
 
-.fade-enter-active,
-.fade-leave-active {
-    transition: opacity var(--transition-speed) ease;
-}
-.fade-enter-from,
-.fade-leave-to {
-    opacity: 0;
-}
+
 </style>

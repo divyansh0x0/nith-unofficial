@@ -9,7 +9,28 @@ html,body{
     box-sizing: border-box;
     transition: 160ms background-color ease-in-out;
 }
+p{
+    color:var(--color-on-surface-variant);
+    font-family: "Roboto Flex", sans-serif;
+}
+a{
+    color:var(--color-secondary);
+    font-family: "Roboto Flex", sans-serif;
+}
+button{
+    background-color: var(--color-primary-container);
+    padding: var(--padding-sm) var(--padding-lg);
+    border-radius: var(--border-radius);
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    color: var(--color-on-primary-container);
+    font-family: "Roboto Flex", sans-serif;
+}
 
+.full-section{
+    min-width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
 h1,h2,h3,h4,h5,h6{
     color: var(--color-primary);
     font-family: "Exo 2", sans-serif;
@@ -32,22 +53,4 @@ h5{
 }
 h6{
     font-size: 1rem;
-}
-p,a{
-    color:var(--color-on-surface-variant);
-    font-family: "Roboto Flex", sans-serif;
-}
-button{
-    background-color: var(--color-primary-container);
-    padding: var(--padding-sm) var(--padding-lg);
-    border-radius: var(--border-radius);
-    border: 2px solid rgba(0, 0, 0, 0.15);
-    color: var(--color-on-primary-container);
-    font-family: "Roboto Flex", sans-serif;
-}
-
-.full-section{
-    min-width: 100%;
-    min-height: 100vh;
-    position: relative;
 }
