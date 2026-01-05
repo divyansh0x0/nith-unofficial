@@ -9,6 +9,7 @@ let collapse_width = 0;
 const navbarRef = ref<HTMLElement | null>(null)
 const collapseNavbar = ref(false)
 
+// Used to collapse and expand navbar
 const checkWidth = () => {
     if (!navbarRef.value) return
     console.log(navbarRef.value.offsetWidth+80, window.innerWidth, collapse_width, collapseNavbar.value);
@@ -29,8 +30,6 @@ const checkWidth = () => {
             collapseNavbar.value = false;
         }
     }
-
-
 }
 
 onMounted(() => {

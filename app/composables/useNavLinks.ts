@@ -12,9 +12,9 @@ export const useNavLinks = ()=>{
             icon: "mdi:home-variant-outline"
         },
         {
-            name: "Map",
-            url: "/map",
-            icon: "mdi:map",
+            name: "Result",
+            url: "/result",
+            icon: "mdi:book",
         },
         {
             name: "Notes",

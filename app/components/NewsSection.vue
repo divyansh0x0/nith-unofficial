@@ -16,7 +16,7 @@ interface EventItemDetails {
 }
 
 
-function parse(anchor_elements_arr: Iterable<HTMLAnchorElement>) {
+function parseAnchorTags(anchor_elements_arr: Iterable<HTMLAnchorElement>) {
     const link_details: EventItemDetails[] = [];
     let view_all_link                      = "";
 
@@ -41,6 +41,7 @@ const are_updates_available = ref(false);
 const nith_news_categories  = ref<NITHEventDetails[]>([]);
 onMounted(async () => {
     try {
+        // Fetch news
         const request               = await fetch("https://nith.ac.in/");
         are_updates_available.value = request.ok;
 
@@ -57,7 +58,7 @@ onMounted(async () => {
 
             if (!headingText) return;
 
-            const { view_all_link, link_details } = parse(events);
+            const { view_all_link, link_details } = parseAnchorTags(events);
 
             if(link_details.length > 0){
                 nith_news_categories.value.push({
